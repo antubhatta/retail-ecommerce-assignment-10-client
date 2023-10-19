@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
 
 import {
   createBrowserRouter,
@@ -10,6 +11,8 @@ import {
 import Root from './Layout/Root';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import ErrorPage from './Components/ErrorPage';
+import AuthProvider from './AuthProvider/AuthProvider';
+import Registration from './Pages/Registration/Registration';
 
 const router = createBrowserRouter([
   {
@@ -20,11 +23,19 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('../fake.json')
+        loader: ()=> fetch('../brand.json')
       },
       {
         path: "/addProduct",
         element: <AddProduct></AddProduct>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Registration></Registration>
       }
       
     ]
@@ -34,6 +45,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+     <AuthProvider> <RouterProvider router={router} /></AuthProvider>
   </React.StrictMode>,
 )

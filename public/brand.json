@@ -1,110 +1,145 @@
-[
-    {
-        "name": "Amazon",
-        "image": "https://cdn.worldvectorlogo.com/logos/amazon-2.svg",
-        "advertisement": [
+
+{
+    "brands": [
+        [
             {
-                "image": "https://i.ibb.co/vvBqnvZ/How-does-Amazon-advertising.png",
-                "title": "Shop with Amazon - Great Deals!"
+                "name": "Amazon",
+                "image": "https://cdn.worldvectorlogo.com/logos/amazon-2.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/vvBqnvZ/How-does-Amazon-advertising.png",
+                        "title": "Shop with Amazon - Great Deals!"
+                    },
+                    {
+                        "image": "https://i.ibb.co/BqVxp5K/amazon.png",
+                        "title": "Amazon Prime - Fast Shipping"
+                    },
+                    {
+                        "image": "https://i.ibb.co/BqVxp5K/amazon.png",
+                        "title": "Amazon Echo - Your Smart Assistant"
+                    }
+                ]
             },
             {
-                "image": "https://i.ibb.co/BqVxp5K/amazon.png",
-                "title": "Amazon Prime - Fast Shipping"
+                "name": "Walmart",
+                "image": "https://cdn.worldvectorlogo.com/logos/walmart.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/DtV4FZk/walmart2.jpg",
+                        "title": "Walmart Rollback Savings"
+                    },
+                    {
+                        "image": "https://i.ibb.co/WGS93mQ/walmart1.webp",
+                        "title": "Walmart Grocery - Fresh & Fast"
+                    },
+                    {
+                        "image": "https://i.ibb.co/9qH9HgD/walmart3.jpg",
+                        "title": "Walmart Electronics - Great Selection"
+                    }
+                ]
             },
             {
-                "image": "https://i.ibb.co/BqVxp5K/amazon.png",
-                "title": "Amazon Echo - Your Smart Assistant"
+                "name": "Alibaba",
+                "image": "https://cdn.worldvectorlogo.com/logos/alibaba-1.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/TWF7gLd/Alibaba-Ali-Day-2020-2.jpg",
+                        "title": "Alibaba Global Shopping"
+                    },
+                    {
+                        "image": "https://i.ibb.co/HhdNgpR/alibaba-tips-hr-dsc0034-1.jpg",
+                        "title": "Alibaba Wholesale Deals"
+                    },
+                    {
+                        "image": "https://i.ibb.co/DWF9YX9/alibaba-3.jpg",
+                        "title": "Alibaba Mobile App - Shop Anytime"
+                    }
+                ]
+            },
+            {
+                "name": "eBay",
+                "image": " https://cdn.worldvectorlogo.com/logos/ebay.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/XWBJWhD/data-1.jpg ",
+                        "title": "eBay Auctions - Bid and Win"
+                    },
+                    {
+                        "image": "https://i.ibb.co/B3LQ8dk/data2.jpg ",
+                        "title": "eBay Daily Deals - Huge Discounts"
+                    },
+                    {
+                        "image": "https://i.ibb.co/9NBTqnP/eBay-3.jpg",
+                        "title": "eBay Motors - Auto Parts & Vehicles"
+                    }
+                ]
+            },
+            {
+                "name": "Target",
+                "image": " https://cdn.worldvectorlogo.com/logos/target-7.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/0K4rTbC/target-1.png ",
+                        "title": "Target RedCard - Save 5% Every Day"
+                    },
+                    {
+                        "image": "https://i.ibb.co/vwRZVNF/target-2.jpg ",
+                        "title": "Target Style - Fashion for All"
+                    },
+                    {
+                        "image": "https://i.ibb.co/tsrVhFw/target-3.jpg",
+                        "title": "Target Toys - Great Selection for Kids"
+                    }
+                ]
+            },
+            {
+                "name": "Best Buy",
+                "image": "https://cdn.worldvectorlogo.com/logos/best-buy-1.svg",
+                "advertisement": [
+                    {
+                        "image": "https://i.ibb.co/VYtsHqx/best-buy-1.png ",
+                        "title": "Best Buy Tech Deals"
+                    },
+                    {
+                        "image": "https://i.ibb.co/P4yXGKt/best-buy-2.jpg ",
+                        "title": "Best Buy Home Theater - Quality Audio"
+                    },
+                    {
+                        "image": "https://i.ibb.co/c1J1xRb/best-buy-3.jpg",
+                        "title": "Best Buy Gaming - Play Your Way"
+                    }
+                ]
             }
         ]
-    },
-    {
-        "name": "Walmart",
-        "image": "https://cdn.worldvectorlogo.com/logos/walmart.svg",
-        "advertisement": [
-            {
-                "image": "https://i.ibb.co/DtV4FZk/walmart2.jpg",
-                "title": "Walmart Rollback Savings"
-            },
-            {
-                "image": "https://i.ibb.co/WGS93mQ/walmart1.webp",
-                "title": "Walmart Grocery - Fresh & Fast"
-            },
-            {
-                "image": "https://i.ibb.co/9qH9HgD/walmart3.jpg",
-                "title": "Walmart Electronics - Great Selection"
-            }
-        ]
-    },
-    {
-        "name": "Alibaba",
-        "image": "https://cdn.worldvectorlogo.com/logos/alibaba-1.svg",
-        "advertisement": [
-            {
-                "image": "https://i.ibb.co/TWF7gLd/Alibaba-Ali-Day-2020-2.jpg",
-                "title": "Alibaba Global Shopping"
-            },
-            {
-                "image": "https://i.ibb.co/HhdNgpR/alibaba-tips-hr-dsc0034-1.jpg",
-                "title": "Alibaba Wholesale Deals"
-            },
-            {
-                "image": "https://i.ibb.co/DWF9YX9/alibaba-3.jpg",
-                "title": "Alibaba Mobile App - Shop Anytime"
-            }
-        ]
-    },
-    {
-        "name": "eBay",
-        "image": " https://cdn.worldvectorlogo.com/logos/ebay.svg",
-        "advertisement": [
-            {
-                "image": "https://i.ibb.co/XWBJWhD/data-1.jpg ",
-                "title": "eBay Auctions - Bid and Win"
-            },
-            {
-                "image": "https://i.ibb.co/B3LQ8dk/data2.jpg ",
-                "title": "eBay Daily Deals - Huge Discounts"
-            },
-            {
-                "image": "https://i.ibb.co/9NBTqnP/eBay-3.jpg",
-                "title": "eBay Motors - Auto Parts & Vehicles"
-            }
-        ]
-    },
-    {
-        "name": "Target",
-        "image": " https://cdn.worldvectorlogo.com/logos/target.svg",
-        "advertisement": [
-            {
-                "image": "https://i.ibb.co/0K4rTbC/target-1.png ",
-                "title": "Target RedCard - Save 5% Every Day"
-            },
-            {
-                "image": "https://i.ibb.co/vwRZVNF/target-2.jpg ",
-                "title": "Target Style - Fashion for All"
-            },
-            {
-                "image": "https://i.ibb.co/tsrVhFw/target-3.jpg",
-                "title": "Target Toys - Great Selection for Kids"
-            }
-        ]
-    },
-    {
-        "name": "Best Buy",
-        "image": "https://cdn.worldvectorlogo.com/logos/best-buy-1.svg",
-        "advertisement": [
-            {
-                "image": "https://i.ibb.co/VYtsHqx/best-buy-1.png ",
-                "title": "Best Buy Tech Deals"
-            },
-            {
-                "image": "https://i.ibb.co/P4yXGKt/best-buy-2.jpg ",
-                "title": "Best Buy Home Theater - Quality Audio"
-            },
-            {
-                "image": "https://i.ibb.co/c1J1xRb/best-buy-3.jpg",
-                "title": "Best Buy Gaming - Play Your Way"
-            }
-        ]
-    }
-]
+    ],
+    "team_members": [
+        {
+          "member_id": 1,
+          "full_name": "Alice Smith",
+          "position": "Event Coordinator",
+          "email": "alice.smith@example.com",
+          "profile_image_url": "https://i.ibb.co/LZQNkDF/team1.jpg"
+        },
+        {
+          "member_id": 2,
+          "full_name": "John Johnson",
+          "position": "Venue Specialist",
+          "email": "john.johnson@example.com",
+          "profile_image_url": "https://i.ibb.co/L6YbPfY/team-member-4.jpg"
+        },
+        {
+          "member_id": 3,
+          "full_name": "Emily Davis",
+          "position": "Decorations Expert",
+          "email": "emily.davis@example.com",
+          "profile_image_url": "https://i.ibb.co/StRVT3p/team-member-01.jpg"
+        },
+        {
+          "member_id": 4,
+          "full_name": "Michael Parker",
+          "position": "Catering Coordinator",
+          "email": "michael.parker@example.com",
+          "profile_image_url": "https://i.ibb.co/82ckMG6/team2.jpg"
+        }
+      ]
+}
