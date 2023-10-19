@@ -13,6 +13,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import ErrorPage from './Components/ErrorPage';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Registration from './Pages/Registration/Registration';
+import BrandDetails from './Components/BrandDetails';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Registration></Registration>
+      },
+      {
+        path:"/details",
+        element:<BrandDetails></BrandDetails>
       }
       
     ]
