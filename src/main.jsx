@@ -39,8 +39,9 @@ const router = createBrowserRouter([
         element: <Registration></Registration>
       },
       {
-        path:"/details",
-        element:<BrandDetails></BrandDetails>
+        path:"/details/:brandName",
+        element:<BrandDetails></BrandDetails>,
+        loader: ()=> fetch('../product.json')
       }
       
     ]

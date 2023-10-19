@@ -1,165 +1,185 @@
 {
     "data": [
       {
+        "id": "1",
         "image": "https://i.ibb.co/Dwdcd7K/kindle-signature-paperwhite-2.webp",
         "name": "Kindle signature PaperWhite",
         "brand": "Amazon",
         "type": "E-Commerce",
-        "price": 599.99,
+        "price": "$599.99",
         "rating": 4.5
       },
       {
+        "id": "2",
         "image": "https://i.ibb.co/HY4G1tw/microwave.jpg",
         "name": "Basics Microwave",
         "brand": "Amazon",
         "type": "Retail",
-        "price": 999.99,
+        "price": "$999.99",
         "rating": 4.8
       },
       {
+        "id": "3",
         "image": "https://i.ibb.co/hDzkhjk/fireTv.webp",
         "name": "Fire TV Stick 4K Max",
         "brand": "Amazon",
         "type": "E-Commerce",
-        "price": 99.99,
+        "price": "$99.99",
         "rating": 4.2
       },
       {
+        "id": "4",
         "image": "https://i.ibb.co/ftdP3zW/echo-show5.jpg",
-        "name": "Echo Show 5 ",
+        "name": "Echo Show 5",
         "brand": "Amazon",
         "type": "Retail",
-        "price": 299.99,
+        "price": "$299.99",
         "rating": 4.0
       },
       {
+        "id": "5",
         "image": "https://i.ibb.co/mvmGkWC/security-Camera.webp",
         "name": "Smart Home Security Camera",
         "brand": "Walmart",
         "type": "E-Commerce",
-        "price": 499.99,
+        "price": "$499.99",
         "rating": 4.4
       },
       {
+        "id": "6",
         "image": "https://i.ibb.co/sj4yhMz/dinning.webp",
         "name": "Home 4-Piece Dining Set X",
         "brand": "Walmart",
         "type": "Retail",
-        "price": 899.99,
+        "price": "$899.99",
         "rating": 4.6
       },
       {
+        "id": "7",
         "image": "https://i.ibb.co/FxtgJqz/Wirelessairbuds.webp",
         "name": "Wireless Bluetooth Earbuds",
         "brand": "Walmart",
         "type": "E-Commerce",
-        "price": 79.99,
+        "price": "$79.99",
         "rating": 4.1
       },
       {
+        "id": "8",
         "image": "https://i.ibb.co/H4RwVdK/menjeans.webp",
         "name": "Men's Jeans",
         "brand": "Walmart",
         "type": "Retail",
-        "price": 249.99,
+        "price": "$249.99",
         "rating": 3.9
       },
       {
+        "id": "9",
         "image": "https://i.ibb.co/Z6YSy8W/trendy-Bag-Pack.jpg",
         "name": "Trendy Bag Collection",
         "brand": "Alibaba",
         "type": "E-Commerce",
-        "price": 699.99,
+        "price": "$699.99",
         "rating": 4.7
       },
       {
+        "id": "10",
         "image": "https://i.ibb.co/6Wbvw4J/household-Tool.jpg",
         "name": "Household Tool Set",
         "brand": "Alibaba",
         "type": "Retail",
-        "price": 1099.99,
+        "price": "$1099.99",
         "rating": 4.9
       },
       {
+        "id": "11",
         "image": "https://i.ibb.co/YhY3mwh/smart-Home.webp",
         "name": "Smart Home Automation Bundle",
         "brand": "Alibaba",
         "type": "E-Commerce",
-        "price": 89.99,
+        "price": "$89.99",
         "rating": 4.3
       },
       {
+        "id": "12",
         "image": "https://i.ibb.co/MV6TDdf/setBag.jpg",
         "name": "Set Bug Catcher Kit",
         "brand": "Alibaba",
         "type": "Retail",
-        "price": 319.99,
+        "price": "$319.99",
         "rating": 4.1
       },
       {
+        "id": "13",
         "image": "https://i.ibb.co/Pt9t5PL/Health.jpg",
         "name": "Health Medicine",
         "brand": "eBay",
         "type": "E-Commerce",
-        "price": 599.99,
+        "price": "$599.99",
         "rating": 4.5
       },
       {
+        "id": "14",
         "image": "https://i.ibb.co/wJLhVTP/laptop.jpg",
         "name": "Laptop",
         "brand": "eBay",
         "type": "Retail",
-        "price": 999.99,
+        "price": "$999.99",
         "rating": 4.8
       },
       {
+        "id": "15",
         "image": "https://i.ibb.co/DkL9ZG9/Denim-and-Classic-Vintagejpg.jpg",
-        "name": "Denim and Classic vintage",
+        "name": "Denim and Classic Vintage",
         "brand": "eBay",
         "type": "E-Commerce",
-        "price": 99.99,
+        "price": "$99.99",
         "rating": 4.2
       },
       {
+        "id": "16",
         "image": "https://i.ibb.co/yQH7cWf/home-Garden.png",
         "name": "Home and Garden",
         "brand": "eBay",
         "type": "Retail",
-        "price": 299.99,
+        "price": "$299.99",
         "rating": 4.0
       },
       {
+        "id": "17",
         "image": "https://i.ibb.co/bX2PDfN/headphones.webp",
         "name": "Head Phones",
         "brand": "Target",
         "type": "E-Commerce",
-        "price": 499.99,
+        "price": "$499.99",
         "rating": 4.4
       },
       {
+        "id": "18",
         "image": "https://i.ibb.co/4SHMgkp/Comfiest-Blan-Kets.jpg",
         "name": "Comfiest BlanKets",
         "brand": "Target",
         "type": "Retail",
-        "price": 899.99,
+        "price": "$899.99",
         "rating": 4.6
       },
       {
+        "id": "19",
         "image": "https://i.ibb.co/ZVpQ2sh/best-fitness-trackers-2023.webp",
         "name": "Fitness Tracker",
         "brand": "Target",
         "type": "E-Commerce",
-        "price": 79.99,
+        "price": "$79.99",
         "rating": 4.1
       },
       {
+        "id": "20",
         "image": "https://i.ibb.co/ZVGQwdt/best-cookware-sets.webp",
         "name": "Cookware Sets",
         "brand": "Target",
         "type": "Retail",
-        "price": 249.99,
+        "price": "$249.99",
         "rating": 3.9
       }
     ]
-  }
+}
   
