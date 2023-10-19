@@ -2,10 +2,10 @@
 
 const ContactPage = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <div className="bg-gradient-to-r mt-8 mb-8 md:mt-16 md:mb-16 from-indigo-700 to-pink-600 py-16">
       <div className="container mx-auto">
-        <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-5">Contact Us</h2>
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8">
+          <h2 className="text-3xl text-center font-extrabold text-gray-800 mb-5">Contact Us</h2>
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-600 text-sm font-semibold mb-2">
@@ -15,8 +15,8 @@ const ContactPage = () => {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="John Doe"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500"
+                placeholder="Your name"
+                className="w-full px-4 py-2 rounded-full border border-indigo-400 focus:ring-4 focus:ring-indigo-500"
               />
             </div>
             <div className="mb-4">
@@ -27,8 +27,8 @@ const ContactPage = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="you@example.com"
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500"
+                placeholder="your email"
+                className="w-full px-4 py-2 rounded-full border border-indigo-400 focus:ring-4 focus:ring-indigo-500"
               />
             </div>
             <div className="mb-4">
@@ -40,15 +40,15 @@ const ContactPage = () => {
                 name="message"
                 rows="4"
                 placeholder="Write your message here..."
-                className="w-full px-4 py-2 rounded border border-gray-300 focus:border-blue-500"
+                className="w-full px-4 py-2 rounded-lg border border-indigo-400 focus:ring-4 focus:ring-indigo-500"
               />
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full focus:outline-none"
               >
-                Submit
+                Send Message
               </button>
             </div>
           </form>
@@ -59,3 +59,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
