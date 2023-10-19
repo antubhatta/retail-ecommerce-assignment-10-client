@@ -4,11 +4,11 @@ const Footer = () => {
         <footer className="bg-black text-white py-8">
   <div className="container mx-auto flex flex-col md:flex-row justify-between">
     <div className="mb-4 md:mb-0">
-      <h3 className="text-2xl font-semibold mb-2">Brand Shop</h3>
+      <h3 className="text-lg lg:text-2xl font-semibold mb-2">Brand Shop</h3>
       <p className="text-base md:text-lg">Retail and E-Commerce</p>
     </div>
     <div className="mb-4 md:mb-0">
-      <h3 className="text-2xl font-semibold mb-2">Pages</h3>
+      <h3 className="text-lg lg:text-2xl font-semibold mb-2">Pages</h3>
       <ul>
       <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addProduct">AddProduct</NavLink></li>
@@ -17,7 +17,7 @@ const Footer = () => {
       </ul>
     </div>
     <div className="mb-4 md:mb-0">
-      <h3 className="text-2xl font-semibold mb-2">Contact Information</h3>
+      <h3 className="text-lg lg:text-2xl font-semibold mb-2">Contact Information</h3>
       <p>Email: antubhatta09@gmail.com</p>
       <p>Phone: 01830833895</p>
     </div>

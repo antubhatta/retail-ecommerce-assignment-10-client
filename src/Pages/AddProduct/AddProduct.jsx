@@ -1,11 +1,53 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AddProduct = () => {
+    const handleAddProduct=e=>{
+        e.preventDefault()
+        const form = e.target;
+        const image = form.photo.value;
+        const name = form.name.value;
+        const brandName = form.brandName.value;
+        const productType = form.type.value;
+        const price = form.price.value;
+        const description = form.description.value;
+        const rating = form.rating.value;
+        const addProduct={
+            image,
+            name,
+            brandName,
+            productType,
+            price,
+            description,
+            rating
+        }
+        console.log(addProduct)
+        fetch(
+            " http://localhost:3000/products",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(addProduct),
+            }
+          )
+          .then(res=>res.json())
+          .then(data=>{
+            console.log(data)
+            if(data.insertedId){
+                toast('products added successfully')
+            }
+            form.reset()
+          })
+    }
+
   return (
     <div className=" bg-gradient-to-b from-gray-500 to-gray-300">
       <h3 className="container mx-auto text-xl md:text-3xl pt-10 mb-6 text-center">
         Add New Product
       </h3>
 
-      <form className="container mx-auto">
+      <form onSubmit={handleAddProduct} className="container mx-auto">
         <div className="form-control md:w-full mb-4">
           <label className="label">
             <span className="label-text text-base md:text-xl">Image:</span>
@@ -39,7 +81,7 @@ const AddProduct = () => {
           <label className="input-group">
             <input
               type="text"
-              name="brand name"
+              name="brandName"
               placeholder="Brand Name"
               className="input input-bordered w-full rounded-lg"
             />
@@ -54,13 +96,13 @@ const AddProduct = () => {
               name="type"
               className="input input-bordered w-full rounded-lg"
             >
-            <option value="" disabled selected>Product Type</option>
-              <option value="Amazon">Amazon</option>
-              <option value="Walmart">Walmart</option>
-              <option value="Alibaba">Alibaba</option>
-              <option value="eBay">eBay</option>
-              <option value="Target">Target</option>
-              <option value="Best Buy">Best Buy</option>
+            
+              <option value="Apparel">Fashion and Apparel</option>
+              <option value="Walmart">Electronics and Gadgets</option>
+              <option value="Furniture">Home and Furniture</option>
+              <option value="beauty">Beauty and Personal Care</option>
+              <option value="sports">Sports and Outdoor</option>
+              <option value="grocery">Food and Grocery</option>
             </select>
           </label>
         </div>
@@ -101,9 +143,10 @@ const AddProduct = () => {
           <input
           type="submit"
           value="Add Product"
-          className="btn mt-8 btn-block px-5 py-4 mb-14 bg-[#D2B48C]"
+          className="btn mt-8 btn-block px-5 py-4 mb-14 bg-gradient-to-b from-blue-500 to-blue-300"
         />
       </form>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
