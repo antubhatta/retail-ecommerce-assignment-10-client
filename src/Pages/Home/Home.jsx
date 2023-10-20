@@ -8,7 +8,7 @@ import BrandCard from "./BrandCard";
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data.brands[0])
+
   return (
     <div>
       <Banner></Banner>
@@ -16,7 +16,7 @@ const Home = () => {
       <div className="container mx-auto  grid grid-cols-1 mb-8 md:mb-12 lg:mb-20 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {
-                data?.brands[0].map((brand,idx)=><BrandCard key={idx} brand={brand}></BrandCard>)
+               data && data?.map((brand,idx)=><BrandCard key={idx} brand={brand}></BrandCard>)
             }
         </div>
            
@@ -27,7 +27,7 @@ const Home = () => {
         </h3>
        
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-16">
-          {data?.team_members.map((team, idx) => (
+          {data?.team_members?.map((team, idx) => (
             <Team key={idx} teams={team}></Team>
           ))}
         </div>

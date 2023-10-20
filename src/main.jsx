@@ -14,6 +14,10 @@ import ErrorPage from './Components/ErrorPage';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Registration from './Pages/Registration/Registration';
 import BrandDetails from './Components/BrandDetails';
+import ProductDetails from './Components/ProductDetails';
+import UpdateForm from './Components/UpdateForm';
+import PrivateRoute from './Components/PrivateRoute';
+import MyCart from './Pages/MyCart.jsx/MyCart';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('../brand.json')
+        loader: ()=> fetch(`http://localhost:3000/brands`)
       },
       {
         path: "/addProduct",
@@ -41,8 +45,23 @@ const router = createBrowserRouter([
       {
         path:"/details/:brandName",
         element:<BrandDetails></BrandDetails>,
-        loader: ()=> fetch('../product.json')
+        loader: ()=> fetch(`http://localhost:3000/products`)
+      },
+      {
+        path:"productDetails/:id",
+        element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:3000/products/${params.id}`)
+      },
+      {
+        path:"products/:id/update",
+        element:<PrivateRoute><UpdateForm></UpdateForm></PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:3000/products/${params.id}`)
+      },
+      {
+        path:"/myCart",
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
       }
+
       
     ]
   },
