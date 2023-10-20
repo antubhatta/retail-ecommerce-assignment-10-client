@@ -40,8 +40,8 @@ const UpdateForm = ( ) => {
           .then(res=>res.json())
           .then(data=>{
             console.log(data)
-            if(data.insertedId){
-                toast('products added updated')
+            if(data.modifiedCount>0){
+                toast('products updated successfully')
             }
             form.reset()
           })

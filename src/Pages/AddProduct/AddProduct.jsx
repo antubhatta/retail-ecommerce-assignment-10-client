@@ -6,16 +6,16 @@ const AddProduct = () => {
         const form = e.target;
         const image = form.photo.value;
         const name = form.name.value;
-        const brandName = form.brandName.value;
-        const productType = form.type.value;
+        const brand = form.brand.value;
+        const type = form.type.value;
         const price = form.price.value;
         const description = form.description.value;
         const rating = form.rating.value;
         const addProduct={
             image,
             name,
-            brandName,
-            productType,
+            brand,
+            type,
             price,
             description,
             rating
@@ -81,7 +81,7 @@ const AddProduct = () => {
           <label className="input-group">
             <input
               type="text"
-              name="brandName"
+              name="brand"
               placeholder="Brand Name"
               className="input input-bordered w-full rounded-lg"
             />

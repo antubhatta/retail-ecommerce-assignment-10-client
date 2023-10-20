@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 const ProductDetail = ({details}) => {
@@ -17,9 +18,9 @@ const ProductDetail = ({details}) => {
                     product: details})
             })
 
-            alert('Product added to the cart')
+            toast('Product added to the cart')
         } catch(error) {
-            console.log('Something went wrong')
+            toast('Something went wrong')
         }
     }
 
@@ -38,7 +39,7 @@ const ProductDetail = ({details}) => {
             <button onClick={onClick} className="bg-gradient-to-r mb-12 from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white font-bold py-2 lg:py-3 px-6 rounded">Add To Cart</button>
         </div>
        </div>
-
+        <ToastContainer></ToastContainer>
     </div>
     );
 };

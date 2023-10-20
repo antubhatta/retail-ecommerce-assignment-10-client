@@ -36,9 +36,10 @@ const BrandDetails = () => {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
                 
                 {
-                    products?.map((product,idx)=><ProductCard key={idx} products={product}></ProductCard>)
+                   !!products.length &&  products?.map((product,idx)=><ProductCard key={idx} products={product}></ProductCard>)
                 }
             </div>
+            {!products.length && <p className="font-medium text-lg mb-10 text-center">No product found.</p>}
         </div>
     );
 };
