@@ -18,6 +18,7 @@ import ProductDetails from './Components/ProductDetails';
 import UpdateForm from './Components/UpdateForm';
 import PrivateRoute from './Components/PrivateRoute';
 import MyCart from './Pages/MyCart.jsx/MyCart';
+import { DarkModeProvider } from './contexts/DarkModeContext';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch(`http://localhost:3000/brands`)
+        loader: ()=> fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/brands`)
       },
       {
         path: "/addProduct",
@@ -46,17 +47,17 @@ const router = createBrowserRouter([
       {
         path:"/details/:brandName",
         element:<BrandDetails></BrandDetails>,
-        loader: ()=> fetch(`http://localhost:3000/products`)
+        loader: ()=> fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/products`)
       },
       {
         path:"productDetails/:id",
         element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: ({params})=> fetch(`http://localhost:3000/products/${params.id}`)
+        loader: ({params})=> fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/products/${params.id}`)
       },
       {
         path:"products/:id/update",
         element:<PrivateRoute><UpdateForm></UpdateForm></PrivateRoute>,
-        loader: ({params})=> fetch(`http://localhost:3000/products/${params.id}`)
+        loader: ({params})=> fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/products/${params.id}`)
       },
       {
         path:"/myCart",
@@ -71,6 +72,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <DarkModeProvider>
      <AuthProvider> <RouterProvider router={router} /></AuthProvider>
+     </DarkModeProvider>
   </React.StrictMode>,
 )

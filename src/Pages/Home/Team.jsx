@@ -6,12 +6,12 @@ const Team = ({teams}) => {
         <div data-aos="fade-right">
            
            <div className=" mt-4 w-full flex items-center ">
-           <img className="rounded-full object-cover w-[150px] h-[150px] mx-auto" src={profile_image_url}></img>
+           <img className="rounded-full object-cover w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] mx-auto" src={profile_image_url}></img>
            </div>
-           <h3 className="text-xl text-center font-medium mt-3">{full_name}</h3>
-           <p className="text-base text-center font-normal mt-2">{position}</p>
-           <p className="text-base text-center font-normal mt-2">{email}</p>
-           <div className='flex items-center justify-center gap-3 mt-2 pb-5'>
+           <h3 className="text-xl dark:text-white text-center font-medium mt-3">{full_name}</h3>
+           <p className="text-base dark:text-white text-center font-normal mt-2">{position}</p>
+           <p className="text-base dark:text-white text-center font-normal mt-2">{email}</p>
+           <div className='flex dark:text-white items-center justify-center gap-3 mt-2 pb-5'>
             <FaFacebook></FaFacebook>
             <FaTwitter></FaTwitter>
             <FaInstagram></FaInstagram>

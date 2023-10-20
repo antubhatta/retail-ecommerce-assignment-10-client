@@ -1,11 +1,16 @@
-import { NavLink } from "react-router-dom";
+import logo from "../../assets/logoipsum-296.svg"
+import { NavLink,Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-8">
+        <footer className="bg-black dark:bg-slate-800 text-white py-8">
   <div className="container mx-auto flex p-6 lg:p-0 flex-col md:flex-row justify-between">
     <div className="mb-4 md:mb-0">
-      <h3 className="text-lg lg:text-2xl font-semibold mb-2">Brand Shop</h3>
-      <p className="text-base md:text-lg">Retail and E-Commerce</p>
+    <div className="flex gap-2 items-center">
+              <img src={logo} alt="" />
+              <Link to="/" className=" normal-case text-lg md:text-xl lg:text-2xl  dark:text-white font-bold"><p className="text-[#007DFC]" >VibeHub</p></Link>
+               
+              </div>
+      <p className="text-base mt-2 md:text-lg">Retail and E-Commerce</p>
     </div>
     <div className="mb-4 md:mb-0">
       <h3 className="text-lg lg:text-2xl font-semibold mb-2">Pages</h3>

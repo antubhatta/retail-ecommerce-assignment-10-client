@@ -9,7 +9,7 @@ const ProductDetail = ({details}) => {
 
     const onClick = async() => {
         try {
-            await fetch('http://localhost:3000/carts', {
+            await fetch('https://retail-ecommerce-assgnment-10-server.vercel.app/carts', {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

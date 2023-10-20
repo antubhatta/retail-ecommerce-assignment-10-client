@@ -41,9 +41,9 @@ const Home = () => {
   const data = useLoaderData();
 
   return (
-    <div>
+    <div className="dark:bg-slate-800">
       <Banner></Banner>
-      <h3 className="container mx-auto text-center text-xl md:text-2xl lg:text-5xl font-bold mt-8 md:mt-12 lg:mt-20 mb-6">Our Brands</h3>
+      <h3 className="container mx-auto text-center text-2xl lg:text-5xl font-bold dark:text-white mt-8 md:mt-12 lg:mt-20 mb-6">Our Brands</h3>
       <div className="container mx-auto  grid grid-cols-1 mb-8 md:mb-12 lg:mb-20 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {
@@ -53,7 +53,7 @@ const Home = () => {
            
       <WhyChooseUs></WhyChooseUs>
       <div className="container mx-auto mt-6 lg:mt-10 ">
-        <h3 className="text-xl md:text-2xl lg:text-4xl mb-6 lg:mb-8  pt-4 container mx-auto text-center font-bold">
+        <h3 className="text-xl dark:text-white md:text-2xl lg:text-4xl mb-6 lg:mb-8  pt-4 container mx-auto text-center font-bold">
           Our Team Members
         </h3>
        

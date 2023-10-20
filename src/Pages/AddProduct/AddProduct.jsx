@@ -22,7 +22,7 @@ const AddProduct = () => {
         }
         console.log(addProduct)
         fetch(
-            " http://localhost:3000/products",
+            " https://retail-ecommerce-assgnment-10-server.vercel.app/products",
             {
               method: "POST",
               headers: {
@@ -43,11 +43,11 @@ const AddProduct = () => {
 
   return (
     <div className=" bg-gradient-to-b from-gray-500 to-gray-300">
-      <h3 className="container mx-auto text-xl md:text-3xl pt-10 mb-6 text-center">
+      <h3 className="container mx-auto text-white text-xl md:text-3xl pt-10 mb-6 text-center">
         Add New Product
       </h3>
 
-      <form onSubmit={handleAddProduct} className="container mx-auto">
+      <form onSubmit={handleAddProduct} className="container mx-auto p-6 lg:p-0">
         <div className="form-control md:w-full mb-4">
           <label className="label">
             <span className="label-text text-base md:text-xl">Image:</span>

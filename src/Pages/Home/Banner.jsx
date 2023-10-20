@@ -2,8 +2,8 @@ import banner from "../../assets/ecommerce.webp";
 
 const Banner = () => {
   return (
-    <div className="relative md:h-[90vh] ">
-      <img className="h-full object-cover w-full" src={banner} alt="" />
+    <div className="relative md:h-[90vh]">
+      <img className="h-full object-cover w-full " src={banner} alt="" />
       <div className="md:absolute top-0 left-0 w-full h-full">
         <div className=" absolute inset-0 bg-black h-full opacity-50"></div>
         <div className="flex absolute z-10 inset-0 flex-col items-center justify-center ">
@@ -22,7 +22,7 @@ const Banner = () => {
               className="rounded-tl-lg rounded-bl-lg border border-solid border-[#11111126] md:w-[300px] lg:w-[420px] mb-6 outline-none ml-5 lg:ml-0 py-2 lg:py-4 pl-4"
               placeholder="Search here..."
               type="text"
-              value=""
+
             />
             <button className="bg-gradient-to-r from-orange-400 to-red-500 border outline-none rounded-tl-0 rounded-tr-lg rounded-br-lg mb-6 rounded-bl-0 text-white text-base font-semibold px-3 lg:px-7 py-2 lg:py-4 mr-6">
               Get Started

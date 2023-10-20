@@ -2,13 +2,13 @@
 
 const ContactPage = () => {
   return (
-    <div className="bg-gradient-to-r mt-8 mb-8 md:mt-16 md:mb-16 from-indigo-700 to-pink-600 py-16">
+    <div className="dark:bg-slate-800 mt-8 mb-8 md:mt-16 md:mb-16 py-16 ">
       <div className="container mx-auto">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl text-center font-extrabold text-gray-800 mb-5">Contact Us</h2>
+        <div className="max-w-md mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-lg p-8">
+          <h2 className="text-3xl text-center font-extrabold text-gray-800 dark:text-white mb-5">Contact Us</h2>
           <form>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-600 text-sm font-semibold mb-2">
+              <label htmlFor="name" className="block text-gray-600 text-sm dark:text-white font-semibold mb-2">
                 Your Name
               </label>
               <input
@@ -20,7 +20,7 @@ const ContactPage = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block text-gray-600 text-sm font-semibold mb-2">
+              <label htmlFor="email" className="block dark:text-white text-gray-600 text-sm font-semibold mb-2">
                 Email Address
               </label>
               <input
@@ -32,7 +32,7 @@ const ContactPage = () => {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="message" className="block text-gray-600 text-sm font-semibold mb-2">
+              <label htmlFor="message" className="block dark:text-white text-gray-600 text-sm font-semibold mb-2">
                 Your Message
               </label>
               <textarea
@@ -46,7 +46,7 @@ const ContactPage = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full focus:outline-none"
+                className="bg-indigo-500 dark:text-white hover:bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full focus:outline-none"
               >
                 Send Message
               </button>

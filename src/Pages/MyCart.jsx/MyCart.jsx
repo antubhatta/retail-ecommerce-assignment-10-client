@@ -13,7 +13,7 @@ const MyCart = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`http://localhost:3000/carts/${user.uid}`);
+            const res = await fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/carts/${user.uid}`);
             const dt = await res.json()
 
             setData(dt)
@@ -24,7 +24,7 @@ const MyCart = () => {
 
     const onDelete = async(id) => {
         try {
-            await fetch(`http://localhost:3000/carts/${id}`, {
+            await fetch(`https://retail-ecommerce-assgnment-10-server.vercel.app/carts/${id}`, {
                 method: 'DELETE'
             });
 

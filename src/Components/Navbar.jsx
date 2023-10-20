@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import User from "./User";
-
+import { DarkModeToggle } from "../DarkModeToggle/DarkModeToggle";
+import logo from "../assets/logoipsum-296.svg"
 
 
 
@@ -28,27 +29,31 @@ const Navbar = () => {
     }
 
     return (
-        <div className="bg-blue-400 py-4 z-50">
+        <div className="bg-blue-300 dark:bg-slate-800 py-4 z-50">
           <div className="navbar container mx-auto">
           <div className="navbar-start">
                 <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                    <label tabIndex={0} className="btn dark:text-white  btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm text-sm md:text-lg dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box z-50 w-52">
+                    <ul tabIndex={0} className="menu  menu-sm text-sm md:text-lg dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box dark:text-black z-50 w-52">
                         {navLinks}
                     </ul>
                 </div>
-                <Link to="/" className=" normal-case text-lg md:text-xl lg:text-2xl font-bold"><p className="" >E-Commerce</p></Link>
+              <div className="flex gap-2 items-center">
+              <img src={logo} alt="" />
+              <Link to="/" className=" normal-case text-lg md:text-xl lg:text-2xl  dark:text-white font-bold"><p className="text-[#007DFC]" >VibeHub</p></Link>
+               
+              </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu text-sm md:text-lg menu-horizontal px-1">
+                <ul className="menu dark:text-white text-sm md:text-lg menu-horizontal px-1">
                     {navLinks}
                 </ul>
             </div>
            
             <div className="navbar-end">
-          
+          <DarkModeToggle></DarkModeToggle>
              {
                 user ? 
                 <>
