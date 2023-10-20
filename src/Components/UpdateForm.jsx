@@ -27,11 +27,10 @@ const UpdateForm = ( ) => {
             description,
             rating
         }
-        console.log(addProduct)
         fetch(
-            " http://localhost:3000/products",
+            `http://localhost:3000/products/${product._id}`,
             {
-              method: "POST",
+              method: "PATCH",
               headers: {
                 "Content-Type": "application/json",
               },
@@ -42,7 +41,7 @@ const UpdateForm = ( ) => {
           .then(data=>{
             console.log(data)
             if(data.insertedId){
-                toast('products added successfully')
+                toast('products added updated')
             }
             form.reset()
           })
@@ -155,7 +154,7 @@ const UpdateForm = ( ) => {
           </div>
           <input
           type="submit"
-          value="Add Product"
+          value="Update Product"
           className="btn mt-8 btn-block px-5 py-4 mb-14 bg-gradient-to-b from-blue-500 to-blue-300"
         />
       </form>

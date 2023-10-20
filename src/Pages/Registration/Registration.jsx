@@ -78,7 +78,7 @@ const Registration = () => {
       })
     }
     return (
-        <div className="hero min-h-screen bg-gradient-to-br  from-purple-500 to-indigo-600">
+        <div className="hero min-h-screen bg-gradient-to-r from-green-400 via-blue-500 to-indigo-600">
         <div className="hero-content flex-col md:mb-5 lg:mb-10">
           <div className="text-center ">
             <h1 className="text-xl lg:text-3xl mt-12 text-[#FFF] font-bold mb-4">Registration your Account</h1>

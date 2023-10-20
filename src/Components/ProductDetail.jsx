@@ -1,7 +1,28 @@
 
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 const ProductDetail = ({details}) => {
     const{image,name,brand,type,price,rating}=details
+
+    const { user } = useContext(AuthContext)
+
+    const onClick = async() => {
+        try {
+            await fetch('http://localhost:3000/carts', {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({userId: user.uid,
+                    product: details})
+            })
+
+            alert('Product added to the cart')
+        } catch(error) {
+            console.log('Something went wrong')
+        }
+    }
+
     return (
         <div className="flex flex-col mt-10 justify-center gap-6 md:gap-10 md:flex-row">
         <div className="">
@@ -14,7 +35,7 @@ const ProductDetail = ({details}) => {
             <p className="text-sm lg:text-xl mt-3 mb-3">Type:{type}</p>
             <p className="text-sm lg:text-xl mt-3 mb-3">Price:{price}</p>
             <p className="text-sm lg:text-xl mt-3 mb-3">Rating:{rating}</p>
-            <Link to="/myCart"><button className="bg-gradient-to-r mb-12 from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white font-bold py-2 lg:py-3 px-6 rounded">Add To Cart</button></Link>
+            <button onClick={onClick} className="bg-gradient-to-r mb-12 from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white font-bold py-2 lg:py-3 px-6 rounded">Add To Cart</button>
         </div>
        </div>
 

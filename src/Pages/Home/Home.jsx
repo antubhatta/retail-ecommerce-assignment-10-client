@@ -6,6 +6,37 @@ import Team from "./Team";
 import WhyChooseUs from "./WhyChooseUs";
 import BrandCard from "./BrandCard";
 
+const teamData = [
+  {
+    "member_id": 1,
+    "full_name": "Alice Smith",
+    "position": "Event Coordinator",
+    "email": "alice.smith@example.com",
+    "profile_image_url": "https://i.ibb.co/LZQNkDF/team1.jpg"
+  },
+  {
+    "member_id": 2,
+    "full_name": "John Johnson",
+    "position": "Venue Specialist",
+    "email": "john.johnson@example.com",
+    "profile_image_url": "https://i.ibb.co/L6YbPfY/team-member-4.jpg"
+  },
+  {
+    "member_id": 3,
+    "full_name": "Emily Davis",
+    "position": "Decorations Expert",
+    "email": "emily.davis@example.com",
+    "profile_image_url": "https://i.ibb.co/StRVT3p/team-member-01.jpg"
+  },
+  {
+    "member_id": 4,
+    "full_name": "Michael Parker",
+    "position": "Catering Coordinator",
+    "email": "michael.parker@example.com",
+    "profile_image_url": "https://i.ibb.co/82ckMG6/team2.jpg"
+  }
+]
+
 const Home = () => {
   const data = useLoaderData();
 
@@ -27,7 +58,7 @@ const Home = () => {
         </h3>
        
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-16">
-          {data?.team_members?.map((team, idx) => (
+          {teamData?.map((team, idx) => (
             <Team key={idx} teams={team}></Team>
           ))}
         </div>
